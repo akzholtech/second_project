@@ -1,12 +1,11 @@
 .header {
-  min-height: 293px;
   display: flex;
   align-items: center;
 }
 .header_menu {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  padding: 0 25px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin: 92px 24px 96px;
 }
 
 .menu_list {
@@ -46,17 +45,23 @@
   grid-template-rows: 80% 20%;
   min-height: 757px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
 }
 
 .cover_content {
   margin: auto 50px;
 }
 
+.cover_header-title {
+    letter-spacing: 60px;
+}
+
+.title-inner {
+    letter-spacing: 30px;
+}
+
 .cover h1 {
   color: white;
-  letter-spacing: 10px;
   font-size: 100px;
 }
 
@@ -82,6 +87,7 @@
 }
 
 .cover_btn {
+  font-family: Raleway;
   font-size: 22px;
   font-weight: 500;
   color: white;
@@ -111,7 +117,7 @@
 
 .cards {
   display: grid;
-  grid-template: repeat(1, 563px) / repeat(3, 334px);
+  grid-template: repeat(1, 1fr) / repeat(3, 334px);
   gap: 25px;
 }
 
@@ -120,33 +126,30 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 51px 40px 48px 40px;
+  color: white;
+  font-size: 20px;
 }
 
-.card h6 {
+.card h3 {
   font-size: 22px;
   color: white;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
-.card p {
-  color: white;
-  font-size: 20px;
-}
-
-.card:first-child {
+.first-card-img {
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-01.jpg");
 }
 
-.card:nth-child(2) {
+.second-card-img {
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-02.jpg");
 }
 
-.card:nth-child(3) {
+.third-card-img {
   background-size: cover;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -192,11 +195,10 @@
   text-transform: uppercase;
 }
 
-.footer {
+.footer_nav {
   display: flex;
   column-gap: 185px;
-  height: 98px;
-  margin: 0 50px 88px;
+  margin: 0 50px 88px;  
 }
 
 .footer_menu {

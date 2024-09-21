@@ -11,11 +11,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="header_menu">
+      <nav class="header_menu">
         <ul class="menu_list">
-          <li>главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+          <li><a>главная</a></li>
+          <li><a>посмотреть лоты</a></li>
+          <li><a>об аукционе</a></li>
         </ul>
         <a class="menu_img-link"
           ><img
@@ -28,34 +28,43 @@
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
         </address>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="cover">
-        <div class="cover_content">
-          <h1>он о</h1>
-          <h1>теб е</h1>
-          <h1>н адо</h1>
-        </div>
+        <header class="cover_content">
+          <h1 class="cover_header-title">
+            <span class="title-inner">он</span>
+            <span>о</span>
+          </h1>
+          <h1 class="cover_header-title">
+            <span class="title-inner">теб</span>
+            <span>е</span>
+          </h1>
+          <h1 class="cover_header-title">
+            <span>н</span>
+            <span class="title-inner">адо</span>
+          </h1>
+        </header>
         <div class="cover_bottom">
           <p class="cover_phrase">Аукцион вещей, в которые никто не верил</p>
-          <button class="cover_btn">Сделать ставку</button>
+          <button class="cover_btn" type="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots_title">Лоты</h2>
         <div class="cards">
-          <div class="card">
-            <h6>Фильм режиссёра, который бросил киношколу</h6>
+          <a class="card first-card-img">
+            <h3>Фильм режиссёра, который бросил киношколу</h3>
             <p>
               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
               ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
-          </div>
-          <div class="card">
-            <h6>
+          </a>
+          <a class="card second-card-img">
+            <h3>
               Книга, где описан один скучный день из жизни рекламного агента
-            </h6>
+            </h3>
             <p>
               Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
               переходами на древнеанглийский. В ней одновременно рассказывается
@@ -63,16 +72,16 @@
               времён. И это всё накладывается на эпическую поэму Гомера. Сколько
               бы вы поставили на «Улисса» Джеймса Джойса?
             </p>
-          </div>
-          <div class="card">
-            <h6>Картина, которую повторит даже 5-летний сын маминой подруги</h6>
+          </a>
+          <a class="card third-card-img">
+            <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
             <p>
               Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
               похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
               Сколько бы вы на такое поставили, если бы не знали, что это — одна
               из революционных работ Кандинского?
             </p>
-          </div>
+          </a>
         </div>
         <div class="lots_more">посмотреть больше</div>
       </section>
@@ -101,16 +110,18 @@
           продолжали верить их создатели. И сейчас эти лоты стали культовыми.
         </p>
       </section>
-      <footer class="footer">
+    </main>
+    <footer class="footer">
+      <nav class="footer_nav">
         <address class="address">
           <a href="tel:+99995555555">+9 999 555 5555</a>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
         </address>
         <ul class="footer_menu">
-          <li>главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+          <li><a>главная</a></li>
+          <li><a>посмотреть лоты</a></li>
+          <li><a>об аукционе</a></li>
         </ul>
         <ul class="footer_media">
           <li class="footer_media-item">
@@ -123,7 +134,7 @@
             <img src="./images/pinterest.svg" alt="pinterest" />
           </li>
         </ul>
-      </footer>
-    </main>
+      </nav>
+    </footer>
   </body>
 </html>
