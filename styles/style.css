@@ -3,9 +3,9 @@
   align-items: center;
 }
 .header_menu {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    margin: 92px 24px 96px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin: 92px 24px 96px;
 }
 
 .menu_list {
@@ -45,7 +45,8 @@
   grid-template-rows: 80% 20%;
   min-height: 757px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/cover.jpg");
 }
 
 .cover_content {
@@ -53,11 +54,11 @@
 }
 
 .cover_header-title {
-    letter-spacing: 60px;
+  letter-spacing: 60px;
 }
 
 .title-inner {
-    letter-spacing: 30px;
+  letter-spacing: 30px;
 }
 
 .cover h1 {
@@ -198,7 +199,7 @@
 .footer_nav {
   display: flex;
   column-gap: 185px;
-  margin: 0 50px 88px;  
+  margin: 0 50px 88px;
 }
 
 .footer_menu {
